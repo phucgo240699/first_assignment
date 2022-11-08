@@ -30,8 +30,12 @@ const RedemptionItem : React.FC<Props> = ({ item, availableCoins }) => {
 const Container = styled.div`
   width: 200px;
   height: 240px;
+  margin-top: 0px;
   margin-right: 24px;
   border-radius: 4px;
+  border: 1px solid #F1F1F5;
+  background-color: #FFFFFF;
+  box-shadow: 0px 12px 18px 0px #1717250A;
 `
 
 const Thumbnail = styled.img`
@@ -43,6 +47,8 @@ const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin: 16px 10px 0px 16px;
+  max-height: 24px;
 `
 
 const Title = styled.p<{ disable?: boolean }>`
@@ -50,6 +56,9 @@ const Title = styled.p<{ disable?: boolean }>`
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   color: ${p => (p.disable === true ? '#696974' : '#0062FF')};
 `
 
@@ -58,7 +67,13 @@ const Description = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  linesOfText: 2;
+  margin: 8px 10px 0px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
   color: #92929D;
 `
 
@@ -67,12 +82,14 @@ const InsufficientLabel = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 8px 10px 0px 16px;
   color: #0062FF;
 `
 
 const InsufficientIcon = styled.img`
   width: 16px;
   height: 16px;
+  margin-right: 4px;
 `
 
 export default RedemptionItem

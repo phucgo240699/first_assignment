@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Hellix';
+    src: local('Hellix SemiBold'), local('Hellix-SemiBold'),
+        url('Hellix-SemiBold.woff2') format('woff2'),
+        url('Hellix-SemiBold.woff') format('woff'),
+        url('Hellix-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }

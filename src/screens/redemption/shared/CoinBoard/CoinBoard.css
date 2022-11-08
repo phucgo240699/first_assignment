@@ -1,0 +1,9 @@
+.coinBoardContainer {
+  padding: 24px;
+  background-size: cover;
+  margin: -160px 16px 0px 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-image: url("./shared/images/background_image.png");
+  background-color: #FFFFFF;
+}

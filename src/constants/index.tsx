@@ -11,7 +11,7 @@ export const PetrolDummyData : RedemptionType[] = [
     id: 2,
     thumbnail: require('assets/images/petrol2.png'),
     price: 1000,
-    description: '50% discount for every $100 top-up on your Shell Petrol Card'
+    description: '70% discount top-up on your Shell Petrol Card'
   }
 ]
 

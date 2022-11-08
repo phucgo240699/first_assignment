@@ -13,7 +13,6 @@ const HeadBanner = () => {
 
 
 const Container = styled.div`
-  width: 100%;
   padding: 27px 24px 0px 24px;
   background-color: #171725;
   padding-bottom: 200px;
@@ -31,7 +30,7 @@ const SubTitle = styled.div`
   font-family: Hellix;
   font-weight: 400;
   font-size: 16px;
-  margin-top: -30px;
+  margin-top: -25px;
   margin-right: 5px;
   line-height: 24px;
   color: #B5B5BE;

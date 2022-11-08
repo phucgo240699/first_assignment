@@ -1,5 +1,7 @@
+import React from 'react'
 import assetsPicker from "assets/assetsPicker";
 import styled from "styled-components";
+import './CoinBoard.css';
 
 interface Props {
   availableCoins?: number;
@@ -7,7 +9,7 @@ interface Props {
 
 const CoinBoard : React.FC<Props> = ({ availableCoins = 0 }) => {
   return (
-    <Containter>
+    <div className="coinBoardContainer">
       <Label>Available Coin balance</Label>
       <Coin>{ availableCoins }</Coin>
       <ProgressContainer>
@@ -24,23 +26,16 @@ const CoinBoard : React.FC<Props> = ({ availableCoins = 0 }) => {
         </MyCouponsLabel>
       </MyCouponsButton>
       <UpdatedDate>Updated : 02/11/2021</UpdatedDate>
-    </Containter>
+    </div>
   )
 }
-
-const Containter = styled.div`
-  padding: 24px;
-  margin: -170px 16px 24px 16px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  background-color: #FFFFFF;
-`
 
 const Label = styled.p`
   font-family: Hellix;
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
+  margin-top: 0px;
   color: #B5B5BE;
 `
 
@@ -50,6 +45,9 @@ const Coin = styled.p`
   font-size: 48px;
   line-height: 56px;
   margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   color: #171725;
 `
 
@@ -73,11 +71,14 @@ const PaidRecommendation = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  margin-top: 34px;
   color: #92929D;
 `
 
 const ViewTierBenefitsContainer = styled.div`
   display: flex;
+  padding: 0px;
+  margin-top: -15px;
   align-items: center;
   flex-direction: row;
 `
@@ -91,20 +92,21 @@ const ViewTierBenefitsText = styled.p`
 `
 
 const ViewTierBenefitsIcon = styled.img`
-  width: 16px;
-  height: 16px;
-  margin-left: 4px;
+  width: 10px;
+  margin-left: 10px;
+  color: red;
 `
 
 const MyCouponsButton = styled.button`
-  width: 100%;
-  max-width: 300px;
+  width: 295px;
   height: 60px;
   border-radius: 4px;
-  display: flex;  
+  display: flex;
   margin: 0 auto;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
   background-color: #171725;
-  padding: 0px 96px 0px 96px;
 `
 
 const MyCouponsLabel = styled.p`

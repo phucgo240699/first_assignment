@@ -24,6 +24,7 @@ const FoodBeverage : React.FC<Props> = ({ availableCoins = 0 }) => {
 
 const Container = styled.div`
   padding-left: 24px;
+  margin-top: 40px;
 `
 
 const Title = styled.p`

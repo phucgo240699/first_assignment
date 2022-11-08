@@ -20,7 +20,7 @@ const RedemptionScreen = () => {
 }
 
 const Container = styled.div`
-  padding-bottom: 41px;
+  padding-bottom: 91px;
 `
 
 export default RedemptionScreen

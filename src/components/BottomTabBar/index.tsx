@@ -6,8 +6,8 @@ const BottomTabBar = () => {
     <Container>
       <TabIcon src={assetsPicker.images.homeIcon}/>
       <TabIcon src={assetsPicker.images.notificationIcon}/>
-      <TabIcon src={assetsPicker.images.homeIcon}/>
-      <TabIcon src={assetsPicker.images.homeIcon}/>
+      <TabIcon src={assetsPicker.images.paymentIcon}/>
+      <TabIcon src={assetsPicker.images.profileIcon}/>
     </Container>
   )
 }
@@ -16,7 +16,7 @@ const BottomTabBar = () => {
 const Container = styled.div`
   bottom: 0px;
   width: 476px;
-  height: 60px;
+  height: 70px;
   display: flex;
   position: fixed;
   border-top: 1px solid #D5D5DC70;
